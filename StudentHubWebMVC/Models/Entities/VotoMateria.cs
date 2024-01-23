@@ -9,7 +9,8 @@
         public DateTime DataRegistrazioneVotoMateria { get; set; }
 
         // Navigation properties
-        public Studente studenteCorrelato { get; set; }
-        public Materia materiaCorrelata { get; set; }
+        public Studente Studente { get; set; }
+        public Materia Materia { get; set; }
     }
+
 }

@@ -7,7 +7,8 @@
         public string CodiceSettoreScientificoDisciplinare { get; set; }
 
         // Navigation properties
-        public ICollection<Materia> materie { get; set; }
+        public ICollection<Materia> Materie { get; set; }
     }
+
 
 }

@@ -6,14 +6,16 @@
         public string NomeMateria { get; set; }
         public string CodiceMateria { get; set; }
         public int NumeroOre { get; set; }
-        public int Crediti { get; set; }
+        public int CreditiMateria { get; set; }
         public int IDDipartimento { get; set; }
         public int IDSettoreScientificoDisciplinare { get; set; }
         public int AnnoUniversitario { get; set; }
 
         // Navigation properties
-        public Dipartimento dipartimentoCorrelato { get; set; }
-        public SettoreScientificoDisciplinare settoreScientificoDisciplinareCorrelato { get; set; }
+        public Dipartimento Dipartimento { get; set; }
+        public SettoreScientificoDisciplinare SettoreScientificoDisciplinare { get; set; }
+        public ICollection<VotoMateria> VotiMateria { get; set; }
     }
+
 
 }

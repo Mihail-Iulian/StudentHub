@@ -7,8 +7,8 @@
         public int VotoTesiValue { get; set; }
         public DateTime DataRegistrazioneVotoTesi { get; set; }
 
-        // Navigation properties
-        public Studente studenteCorrelato { get; set; }
+        // Navigation property
+        public Studente Studente { get; set; }
     }
 
 }

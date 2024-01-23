@@ -2,11 +2,12 @@
 {
     public class TipoCorso
     {
-        public int IDTipoDiLaurea { get; set; }
-        public string TipoDiLaureaNome { get; set; }
+        public int IDTipoCorso { get; set; }
+        public string TipoCorsoNome { get; set; }
 
         // Navigation properties
-        public ICollection<Corso> corso { get; set; }
+        public ICollection<Corso> Corsi { get; set; }
     }
+
 
 }

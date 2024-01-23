@@ -7,7 +7,8 @@
         public string Localita { get; set; }
 
         // Navigation properties
-        public ICollection<Studente> studenti { get; set; }
+        public ICollection<Studente> Studenti { get; set; }
     }
+
 
 }

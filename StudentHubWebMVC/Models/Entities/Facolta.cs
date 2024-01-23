@@ -6,7 +6,8 @@
         public string NomeFacolta { get; set; }
 
         // Navigation properties
-        public ICollection<Dipartimento> dipartimenti { get; set; }
+        public ICollection<Dipartimento> Dipartimenti { get; set; }
     }
+
 
 }

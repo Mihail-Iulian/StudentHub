@@ -8,7 +8,9 @@
 
         // Navigation properties
         public Facolta Facolta { get; set; }
-        public ICollection<Corso> corsoCorrelato { get; set; }
+        public ICollection<Corso> Corsi { get; set; }
+        public ICollection<Materia> Materie { get; set; }
     }
+
 
 }
