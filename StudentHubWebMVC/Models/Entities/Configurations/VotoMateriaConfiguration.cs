@@ -8,11 +8,13 @@
         {
             builder.HasKey(vm => vm.IDVoto);
             builder.HasOne(vm => vm.Studente)
-                   .WithMany(s => s.VotiMateria)
-                   .HasForeignKey(vm => vm.IDStudente);
+                   .WithMany(s => s.VotiMateriaStudente)
+                   .HasForeignKey(vm => vm.IDStudente)
+                   .OnDelete(DeleteBehavior.Restrict);
             builder.HasOne(vm => vm.Materia)
                    .WithMany(m => m.VotiMateria)
-                   .HasForeignKey(vm => vm.IDMateria);
+                   .HasForeignKey(vm => vm.IDMateria)
+                   .OnDelete(DeleteBehavior.Restrict);
         }
     }
 

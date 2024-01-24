@@ -15,7 +15,7 @@
         // Navigation properties
         public Corso Corso { get; set; }
         public Campus Campus { get; set; }
-        public ICollection<VotoMateria> VotiMateria { get; set; }
+        public ICollection<VotoMateria> VotiMateriaStudente { get; set; }
         public VotoTesi VotoTesi { get; set; }
     }
 
